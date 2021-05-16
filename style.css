@@ -1,9 +1,48 @@
-h1 {
-    color: limegreen;
+/* Global View aka Desktop Viwe */
+
+.container {
+    background-color: mediumaquamarine;
+    min-height: 500px;
+    max-width: 1024px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+}
+
+.col {
+    background-color: mediumvioletred;
+    min-height: 200px;
+    width: 30%;
+    margin-bottom: 40px;
+
+
 }
 
 
-
+/* Tablet View */
 @media (max-width: 768px){
     
+    .col {
+        width: 45%;
+
+    }
+
+
+
 }
+
+
+
+/* Mobile View */
+
+@media (max-width: 400px){
+    
+    .col {
+        width: 100%;
+    }
+
+   
+}
+    
